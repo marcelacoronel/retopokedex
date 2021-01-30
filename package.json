@@ -1,0 +1,20 @@
+{
+  "name": "pokedex",
+  "version": "1.0.0",
+  "description": "enciclopedia con información descriptiva e importante sobre los pokémon",
+  "main": "src/index.html",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "serve src/"
+  },
+  "keywords": [
+    "pokedex"
+  ],
+  "author": "Marcela Coronel",
+  "license": "MIT"
+}
