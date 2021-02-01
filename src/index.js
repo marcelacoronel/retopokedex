@@ -4,6 +4,18 @@ let btnSearch = document.getElementById('btnSearch');
 const url = 'https://pokeapi.co/api/v2/pokemon/';
 
 /**Declaración de Eventos */
+document.getElementById('link-home').addEventListener('click', (e)=>{
+    document.getElementById('home').style.display='block';
+    document.getElementById('main').style.display='none';
+
+})
+document.getElementById('link-pokedex').addEventListener('click', (e)=>{
+    document.getElementById('home').style.display='none';
+    document.getElementById('main').style.display='flex';
+
+})
+
+
 btnSearch.addEventListener('click', getPokemon);
 
 
@@ -11,7 +23,6 @@ btnSearch.addEventListener('click', getPokemon);
 function getPokemon(){
 const cardVisible = document.getElementById('pokemonCard');
 cardVisible.style.display= 'flex';
-
 let numberPokemon = document.getElementById('numberPokemon').value;
 let urlNew =url.concat(numberPokemon);  //Unir al path de la URL de la API el valor ingresado por el usuario
 searchApiPokemon(urlNew);
@@ -30,6 +41,7 @@ function searchApiPokemon(url){
 
 }
 
+/**Función para visualizar los datos el pokémon */
 function showPokemon(dataPokemon){
     console.log(dataPokemon);
     const card = `
@@ -45,8 +57,6 @@ function showPokemon(dataPokemon){
                 <p>Altura:${dataPokemon.height} </p>
                 <p>Base experience: ${dataPokemon.base_experience}</p>          
             </div>
-      
-    
     `;
 
     const pokemonCard = document.getElementById('pokemonCard');
@@ -54,7 +64,7 @@ function showPokemon(dataPokemon){
 
     dataPokemon.types.forEach(element => {
         let type = document.createElement('p');
-        type.innerHTML= 'Typo: ' + element.type.name;
+        type.innerHTML= 'Tipo: ' + element.type.name;
         document.getElementById('pokemon-details').appendChild(type);
         console.log(element.type.name)
 
