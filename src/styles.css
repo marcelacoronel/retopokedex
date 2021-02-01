@@ -1,34 +1,33 @@
-#pokemonCard, #main{
+#pokemonCard, #main {
     display: none;
 }
+
 body {
     margin: 0;
     width: 100vw;
     height: 100vh;
     font-family: 'Goldman', cursive;
-
 }
 
-#root{
+#root {
     width: 100vw;
     height: 100vh;
 }
 
-header{
+header {
     height: 10%;
     display: flex;
     flex-flow: row nowrap;
 }
 
-#img_header{
+#img_header {
     width: 100%;
     flex: 0 1 30%;
     text-align: center;
-
 }
 
 
-#img_header img{
+#img_header img {
     width: 35%;
     height: auto;
     margin-left: 20px;
@@ -40,25 +39,24 @@ nav {
     text-align: center;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     display: inline-block;
     margin: 0 10px;
-
 }
-nav ul li a{
+
+nav ul li a {
     text-decoration: none;
     display: block;
     color: black;
     font-size: 1.5em;
-
 }
 
 nav ul li a:hover {
     background-color: #bf2b2b;
 }
 
-#container-views{
+#container-views {
     width: 100%;
     height: 90%;
     background-image: url("img/background.jpg");
@@ -66,7 +64,7 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-#home{
+#home {
     background-color: rgb(224, 217, 217);
     opacity: 0.9;
     width: 60%;
@@ -77,19 +75,18 @@ nav ul li a:hover {
     margin: 1% 20%;
 }
 
-#home p{
+#home p {
     margin: 20px;
     transform: translateY(50px);
 }
 
-#main{
+#main {
     width: 100%;
     height: 90%;
-    flex-flow: column nowrap;
-    
+    flex-flow: column nowrap;   
 }
 
-#head-container{
+#head-container {
     margin: 2% 20%;
     text-align: center;
     background-color: rgb(236, 228, 228);
@@ -97,7 +94,6 @@ nav ul li a:hover {
     border-radius: 8px;
     width: 60%;
     transform: translate(10px, 10px);
-    
 }
 
 #head-container input {
@@ -127,20 +123,20 @@ nav ul li a:hover {
     height: 75%;
     justify-content: center;
     margin: 1% 20%;
-    
 }
-.container-imgPokemon{
+
+.container-imgPokemon {
     margin: 5px 5px;
     flex: 0 1 45%;
     text-align: center;
 }
 
-.container-imgPokemon img{
+.container-imgPokemon img {
     width: 75%;
 }
 
 
-#pokemon-details{
+#pokemon-details {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
@@ -148,9 +144,6 @@ nav ul li a:hover {
     flex: 0 1 45%;
 }
 
-footer{
+footer {
     text-align: center;
-    /* border: solid 1px rgb(108, 106, 109); */
-  
-    /* height: 10%; */
 }
